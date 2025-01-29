@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        form {
+            border: solid 1px black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 300px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input,
+        textarea {
+            margin-top: 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .menu a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 4px;
+        }
+
+        .menu a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="./index.html">1 from</a>
+        <a href="./index1.html">2 from</a>
+        <a href="./index2.html">3 from</a>
+    </div>
+    <form id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="repeat-password">Repeat password:</label>
+        <input type="password" id="repeat-password" name="repeat-password" required>
+        <label for="data">Birthdate:</label>
+        <input type="date" id="data" name="data" required>
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+        <label for="howold">How old are you:</label>
+        <input type="number" name="howold" id="howold" required>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="10" cols="50"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

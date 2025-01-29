@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відносний та абсолютний шлях</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        p {
+            color: black;
+            font-size: 14px;
+        }
+
+        q {
+            color: rgb(255, 0, 0);
+            font-style: italic;
+        }
+
+        .highlight {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px;
+        }
+
+        .section {
+            border: 1px solid gray;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: white;
+        }
+
+        #footer {
+            text-align: center;
+            color: gray;
+            font-size: 12px;
+        }
+
+        .m {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Відносний та абсолютний шлях</h1>
+        <a href="./imagehome.html">Home</a>
+        <a href="./textwork.html">textwork</a>
+        <a href="./3image.html">3 image</a>
+        <a href="./index.html">The ways. Media. Hyperlink</a>
+    </header>
+    <hr>
+    <div class="section">
+        <h3>Абсолютний шлях</h3>
+        <p>
+            Абсолютний шлях — це повна адреса файлу.
+        </p>
+        <blockquote class="highlight">
+            <q>https://link.com/images/photo.jpg</q>
+        </blockquote>
+        <p>
+            Адреса <abbr title="Вказує на те саме місце">включає</abbr> повний шлях до файлу.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Відносний шлях</h3>
+        <p>
+            Показує місце файлу відносно поточного документа.
+        </p>
+        <blockquote class="highlight">
+            <q>../images/photo.jpg</q>
+        </blockquote>
+        <p>
+            Це означає, що потрібно піднятися на один рівень вище, а потім знайти папку <span>images</span> і файл
+            <span>photo.jpg</span>.
+        </p>
+    </div>
+
+    <hr>
+
+    <footer id="footer">
+        <p style="background-color: azure;">This is my homework &copy; 2024</p>
+    </footer>
+</body>
+
+</html>

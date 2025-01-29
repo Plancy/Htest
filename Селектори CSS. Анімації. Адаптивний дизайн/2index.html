@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Table Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .link {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .home-link {
+            font-weight: bold;
+            color: darkgreen;
+        }
+
+        .header-content {
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .dish-title {
+            color: #d35400;
+        }
+
+        .ingredient {
+            list-style-type: square;
+        }
+
+        .movie-item {
+            font-style: italic;
+            color: #34495e;
+        }
+
+        .link:hover {
+            transform: scale(1.1);
+        }
+
+        .dish-title:hover {
+            transform: translateY(-5px);
+        }
+
+        .ingredient:hover {
+            transform: rotate(5deg);
+        }
+
+        .movie-item:hover {
+            transform: skewX(10deg);
+        }
+
+        header:hover {
+            transform: rotateX(5deg);
+        }
+
+        img {
+            filter: grayscale(50%);
+        }
+
+        .movie-item:hover {
+            filter: brightness(1.5);
+        }
+
+        .header-content:hover {
+            filter: blur(2px);
+        }
+
+        table:hover {
+            filter: sepia(30%);
+        }
+
+        body:hover {
+            filter: contrast(1.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .header-content {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-10px);
+            }
+
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .link {
+            animation: bounce 1.5s infinite;
+        }
+
+        @keyframes colorShift {
+            0% {
+                background-color: #3498db;
+            }
+
+            100% {
+                background-color: #e74c3c;
+            }
+        }
+
+        .movies-list {
+            animation: colorShift 5s infinite alternate;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .dish-title:hover {
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes growShrink {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .ingredient {
+            animation: growShrink 3s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <table>
+            <thead>
+                <tr>
+                    <th><a href="./1table.html" class="link">Table 1</a></th>
+                    <th><a href="./2table.html" class="link">Table 2</a></th>
+                    <th><a href="./index.html" class="link home-link">Home</a></th>
+                    <th><a href="./music.html" class="link">Music</a></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="header-content">
+                        <h1>Відступи. Списки. Таблиці</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore aut amet similique
+                            exercitationem delectus dolor incidunt voluptates, officia officiis ipsam eaque rerum totam
+                            ut quo aspernatur? Saepe error id dolores.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </header>
+    <main>
+        <div>
+            <h2 style="font-size: 30px;">Cтрави</h2>
+            <ol style="padding-left: 30px;" class="recipes-list">
+                <li>
+                    <h2 class="dish-title">Борщ</h2>
+                    <ul>
+                        <li class="ingredient">Буряк</li>
+                        <li class="ingredient">Картопля</li>
+                        <li class="ingredient">Морква</li>
+                        <li class="ingredient">Цибуля</li>
+                        <li class="ingredient">Часник</li>
+                        <li class="ingredient">Капуста</li>
+                        <li class="ingredient">М'ясо (свинина або яловичина)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="dish-title">Піца</h2>
+                    <ul>
+                        <li class="ingredient">Тісто</li>
+                        <li class="ingredient">Томатний соус</li>
+                        <li class="ingredient">Сир моцарела</li>
+                        <li class="ingredient">Пепероні</li>
+                        <li class="ingredient">Оливки</li>
+                        <li class="ingredient">Перець</li>
+                    </ul>
+                </li>
+                <li>
+                    <h2 class="dish-title">Торт "Наполеон"</h2>
+                    <ul>
+                        <li class="ingredient">Листкове тісто</li>
+                        <li class="ingredient">Молоко</li>
+                        <li class="ingredient">Цукор</li>
+                        <li class="ingredient">Масло вершкове</li>
+                        <li class="ingredient">Яйця</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h2>Фільми</h2>
+            <ul style="padding-left: 30px;" class="movies-list">
+                <li class="movie-item">Шоушенкське відкуплення</li>
+                <li class="movie-item">Інтерстеллар</li>
+                <li class="movie-item">Початок</li>
+                <li class="movie-item">Темний лицар</li>
+                <li class="movie-item">Гаррі Поттер і філософський камінь</li>
+            </ul>
+        </div>
+    </main>
+
+</body>
+
+</html>

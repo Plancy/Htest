@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .cube {
+            width: 100px;
+            height: 100px;
+            transition: transform 0.3s ease;
+        }
+
+        .red {
+            background-color: red;
+            margin: 30px;
+            padding: 10px;
+        }
+
+        .y {
+            background-color: rgb(217, 255, 0);
+            margin-top: 30px;
+        }
+
+        .s {
+            background-color: rgb(98, 0, 255);
+        }
+
+        .kolo1 {
+            background-color: rgb(255, 208, 0);
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .kolo2 {
+            background-color: rgb(255, 0, 157);
+            border-radius: 5px 50px;
+            width: 100px;
+            height: 100px;
+            filter: grayscale(100%);
+        }
+
+        .kolo3 {
+            background-color: rgb(0, 255, 149);
+            border-radius: 5px 50px 50px;
+            width: 100px;
+            height: 100px;
+            filter: sepia(50%);
+        }
+
+        @keyframes rotateCube {
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes scaleCircle {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes colorChange {
+            0% {
+                background-color: rgb(255, 0, 157);
+            }
+            50% {
+                background-color: rgb(255, 208, 0);
+            }
+            100% {
+                background-color: rgb(0, 255, 149);
+            }
+        }
+
+        @keyframes fadeText {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .transform-rotate {
+            transform: rotate(45deg);
+        }
+
+        .transform-scale {
+            transform: scale(1.5);
+        }
+
+        .transform-translate {
+            transform: translate(50px, 50px);
+        }
+
+        .transform-skew {
+            transform: skew(20deg, 20deg);
+        }
+
+        .transform-perspective {
+            transform: perspective(500px) rotateY(45deg);
+        }
+
+        .filter-blur {
+            filter: blur(5px);
+        }
+
+        .filter-brightness {
+            filter: brightness(150%);
+        }
+
+        .filter-contrast {
+            filter: contrast(200%);
+        }
+
+        .filter-invert {
+            filter: invert(100%);
+        }
+
+        .filter-grayscale {
+            filter: grayscale(100%);
+        }
+
+        h1, h2 {
+            animation: fadeText 3s ease-in-out infinite;
+        }
+
+        .text {
+            padding: 5px;
+            border-top: 10px solid black;
+            animation: colorChange 5s infinite;
+        }
+
+        .border {
+            border: solid black 5px;
+            border-radius: 50px;
+            animation: rotateCube 3s infinite;
+        }
+
+        span {
+            margin: 30px;
+            padding: 10px;
+            filter: brightness(120%);
+        }
+
+        .kolo1:hover {
+            animation: scaleCircle 2s infinite;
+        }
+
+        .kolo2:hover {
+            filter: sepia(100%);
+        }
+
+        .cube:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="cube red"></div>
+    <div class="cube y"></div>
+    <div class="cube s"></div>
+    <div class="kolo1"></div>
+    <div class="kolo2"></div>
+    <div class="kolo3"></div>
+
+    <h1>Text h1</h1>
+    <h2>Text h2</h2>
+    <div><span>Text</span></div>
+    <div class="border">Text</div>
+    <span class="text">Text</span>
+    <hr>
+
+</body>
+
+</html>

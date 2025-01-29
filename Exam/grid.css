@@ -1,0 +1,81 @@
+/* Включение grid-контейнера */
+.container {
+    display: grid; /* Активирует grid-режим */
+    grid-template-columns: repeat(3, 1fr); /* Создает 3 колонки одинаковой ширины */
+    grid-template-rows: auto 200px; /* Определяет 2 строки: первая автоматически, вторая фиксированной высоты */
+    gap: 10px; /* Отступы между строками и колонками */
+    justify-items: center; /* Горизонтальное выравнивание элементов */
+    align-items: center; /* Вертикальное выравнивание элементов */
+}
+
+/* Основные свойства Grid */
+
+/* 1. grid-template-columns / grid-template-rows */
+/* Определяет количество и размеры колонок и строк */
+.container {
+    grid-template-columns: 100px 200px 1fr; /* Колонки: 100px, 200px и оставшееся пространство */
+    grid-template-rows: 50px 2fr 1fr; /* Строки: 50px, 2 части и 1 часть оставшегося пространства */
+}
+
+/* 2. gap */
+/* Отступы между строками и колонками */
+.container {
+    gap: 20px; /* Общий отступ */
+    row-gap: 10px; /* Отступ между строками */
+    column-gap: 30px; /* Отступ между колонками */
+}
+
+/* 3. justify-items / align-items */
+/* Выравнивание элементов внутри ячеек */
+.container {
+    justify-items: start; /* Выравнивание элементов по левому краю */
+    align-items: stretch; /* Растяжение элементов по высоте ячейки */
+}
+
+/* 4. justify-content / align-content */
+/* Выравнивание всей сетки внутри контейнера */
+.container {
+    justify-content: space-between; /* Пространство между колонками */
+    align-content: center; /* Выравнивание строк по центру */
+}
+
+/* 5. grid-auto-rows / grid-auto-columns */
+/* Автоматически добавляет строки или колонки с указанным размером */
+.container {
+    grid-auto-rows: 100px; /* Новые строки высотой 100px */
+    grid-auto-columns: 200px; /* Новые колонки шириной 200px */
+}
+
+/* 6. grid-area */
+/* Определяет позицию элемента в сетке */
+.item {
+    grid-area: 1 / 2 / 3 / 4; /* Начало строки 1, колонки 2, до строки 3, колонки 4 */
+}
+
+/* 7. grid-template-areas */
+/* Создает именованные области сетки */
+.container {
+    grid-template-areas:
+        "header header header"
+        "menu content content"
+        "footer footer footer"; /* Задается макет сетки */
+}
+
+.header {
+    grid-area: header; /* Помещается в область header */
+}
+.menu {
+    grid-area: menu; /* Помещается в область menu */
+}
+
+/* 8. place-items */
+/* Сокращение для justify-items и align-items */
+.container {
+    place-items: center; /* Выравнивание элементов в центре */
+}
+
+/* 9. place-content */
+/* Сокращение для justify-content и align-content */
+.container {
+    place-content: space-around; /* Распределение строк и колонок с отступами вокруг */
+}

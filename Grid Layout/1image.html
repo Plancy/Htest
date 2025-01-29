@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            background: orange;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: repeat(4, 1fr);
+            width: 80%;
+            height: 50%;
+        }
+
+        .header {
+            grid-column: span 4;
+            background-color: red;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .black {
+            background-color: #000000;
+        }
+
+        .header {
+            height: 10%;
+        }
+
+        .red,
+        .green,
+        .blue,
+        .black {
+            height: 100%;
+        }
+
+        .red {
+            grid-column: 1;
+        }
+
+        .green {
+            grid-column: 2;
+        }
+
+        .blue {
+            grid-column: 3;
+        }
+
+        .black {
+            grid-column: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="black"></div>
+    </div>
+    </div>
+</body>
+
+</html>

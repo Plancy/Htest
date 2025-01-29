@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework HTML</title>
+    <style>
+        body {
+            background-color: rgba(0, 255, 221, 0.178);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .info {
+            padding: 0px 0px 15px;
+        }
+
+        .h {
+            display: flex;
+        }
+
+        strong {
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Homework HTML</h1>
+        <hr>
+    </header>
+
+    <main>
+        <h2>HTML Terms</h2>
+        <div class="info">
+            <div class="info__html">
+                <p><b>HTML: </b>It is a language used to create web pages. It helps browsers understand how to display
+                    text, images, and
+                    other elements on the page.</p>
+            </div>
+
+            <div class="info__markup">
+                <p><b>Markup Language: </b>It is a way of organizing text using special tags that tell the browser how
+                    to display the information.</p>
+            </div>
+
+            <div class="info__doctype">
+                <p><b>DOCTYPE: </b> tells the browser how to interpret HTML: specifies the version and markup rules.</p>
+            </div>
+
+            <div class="info__Inline">
+                <p><b>Inline tags: </b>Inline tags: appear within a line of text and don’t <span style="color: red;">
+                        create a new
+                        line</span></p>
+            </div>
+
+            <div class="info__blocktags">
+                <p><b>Block tags: </b>take up the full width of the container and start on a new line</p>
+            </div>
+
+            <div class="h">
+                <h1>1</h1>
+                <h2>2</h2>
+                <h3>3</h3>
+                <h4>4</h4>
+                <h5>5</h5>
+                <h6>6</h6>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <hr>
+        <p><strong>&copy; All rights reserved.<strong></p>
+
+    </footer>
+</body>
+
+</html>

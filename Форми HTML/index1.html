@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <style>
+        form {
+            border: solid 1px black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 300px;
+            background-color: #f9f9f9;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, select {
+            margin-top: 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .menu a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 4px;
+        }
+        .menu a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="./index.html">1 from</a>
+        <a href="./index1.html">2 from</a>
+        <a href="./index2.html">3 from</a>
+    </div>
+    <form>
+        <label for="product-type">Тип продукту:</label>
+        <select id="product-type" name="product-type">
+            <option value="phone">Телефон</option>
+            <option value="laptop">Ноутбук</option>
+            <option value="vacuum">Пилесос</option>
+            <option value="charger">Зарядка</option>
+        </select>
+
+        <label>Потужність:</label>
+        <input type="checkbox" id="15w" name="power" value="15w">
+        <label for="15w">15w</label>
+        <input type="checkbox" id="25w" name="power" value="25w">
+        <label for="25w">25w</label>
+        <input type="checkbox" id="65w" name="power" value="65w">
+        <label for="65w">65w</label>
+        <input type="checkbox" id="100w" name="power" value="100w">
+        <label for="100w">100w</label>
+        <input type="checkbox" id="200w" name="power" value="200w">
+        <label for="200w">200w</label>
+
+        <label>Марка:</label>
+        <input type="checkbox" id="samsung" name="brand" value="samsung">
+        <label for="samsung">Самсунг</label>
+        <input type="checkbox" id="lg" name="brand" value="lg">
+        <label for="lg">LG</label>
+        <input type="checkbox" id="asus" name="brand" value="asus">
+        <label for="asus">Asus</label>
+        <input type="checkbox" id="lenovo" name="brand" value="lenovo">
+        <label for="lenovo">Lenovo</label>
+
+        <label for="sort">Сортування:</label>
+        <select id="sort" name="sort">
+            <option value="cheap">Від дешевих</option>
+            <option value="expensive">Від дорогих</option>
+            <option value="rating">По рейтингу</option>
+        </select>
+
+        <label for="model-name">Назва моделі:</label>
+        <input type="text" id="model-name" name="model-name" required>
+
+        <input type="submit" value="Submit">
+        <p>Iframe</p>
+    <iframe src="./index2.html" width="100%" height="100%"></iframe>
+    </form>
+</body>
+</html>
